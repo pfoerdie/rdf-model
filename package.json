@@ -1,0 +1,24 @@
+{
+  "name": "rdf-model",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rdf-model.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pfoerdie/rdf-model.git"
+  },
+  "keywords": [
+    "rdf",
+    "ontology",
+    "model"
+  ],
+  "author": "pfoerdie@gmail.com",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Pfoerdie/rdf-model/issues"
+  },
+  "homepage": "https://github.com/Pfoerdie/rdf-model#readme"
+}
