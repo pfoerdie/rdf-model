@@ -1,10 +1,14 @@
-const model = require('.');
+const _ = require('./__util.js'), model = require('./__model.js');
 
 module.exports = class extends model.rdfs_Resource {
 
     static get type() { return model.rdfs_Class; }
     static get id() { return 'rdfs:Class'; }
-    constructor() { throw new Error(`not instanciable`); }
+
+    constructor() { 
+        _.assert(false, 'not instanciable', Error);
+    }
+    
     static [Symbol.hasInstance](instance) {
         return typeof instance === 'function'
             && (model.rdfs_Resource === instance

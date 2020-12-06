@@ -1,4 +1,2 @@
-for (let elem of Object.values(require('./model'))) {
-    exports[elem.id] = elem;
-}
-// Object.assign(exports, require('./model'));
+const model = require('./model/__model.js');
+module.exports = Object.freeze({ ...model });

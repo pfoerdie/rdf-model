@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "rdf-model.js",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  },
+  "jest": {
+    "testRegex": "/test/.*\\.test\\.js$",
+    "verbose": true
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "example": "node ./test/example.js"
   },
   "repository": {
     "type": "git",
