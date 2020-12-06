@@ -1,7 +1,21 @@
+const 
+    util = require('util'),
+    path = require('path');
+
+exports.promisify = util.promisify;
+exports.joinPath = path.join;
+
 exports.lockProp = function(obj, ...keys) {
     const lock = { configurable: false };
     for(let key of keys) {
         Object.defineProperty(obj, key, lock);
+    }
+};
+
+exports.hideProp = function(obj, ...keys) {
+    const hide = { enumerable: false };
+    for(let key of keys) {
+        Object.defineProperty(obj, key, hide);
     }
 };
 

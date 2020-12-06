@@ -4,7 +4,8 @@
   "description": "",
   "main": "rdf-model.js",
   "devDependencies": {
-    "jest": "^26.4.2"
+    "jest": "^26.4.2",
+    "node-fetch": "^2.6.1"
   },
   "jest": {
     "testRegex": "/test/.*\\.test\\.js$",
@@ -12,7 +13,8 @@
   },
   "scripts": {
     "test": "jest",
-    "example": "node ./test/example.js"
+    "example": "node ./test/example.js",
+    "loader": "node ./ontologies/loader.js download"
   },
   "repository": {
     "type": "git",
