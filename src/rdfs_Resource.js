@@ -1,5 +1,8 @@
 const _ = require('./__util.js'), model = require('./__model.js');
 
+/**
+ * @name rdfs_Resource
+ */
 module.exports = class {
 
     static get type() { return model.rdfs_Class; }
