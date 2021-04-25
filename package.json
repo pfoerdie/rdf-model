@@ -1,5 +1,5 @@
 {
-  "name": "rdf-model",
+  "name": "@pfoerdie/rdf-model",
   "version": "1.0.0",
   "description": "",
   "main": "rdf-model.js",
