@@ -1,4 +1,4 @@
-# rdf-model
+# @pfoerdie/rdf-model
 
 ## Model
 
